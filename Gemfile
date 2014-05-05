@@ -3,9 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
-# Use faker for adding fake data
-gem 'faker'
-
 # Use sqlite3 as the database for Active Record
 group :production do
   gem 'pg'
@@ -44,6 +41,17 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+# Use faker for adding fake data
+gem 'faker'
+
+# Devise for user authentication
+gem 'devise'
+
+# Figaro for handling sensitive data with environment variables
+gem 'bundle'
+
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
