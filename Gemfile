@@ -54,6 +54,9 @@ gem 'bundle'
 # Pundit for assigning user roles
 gem 'pundit'
 
+# Redcarpet for Markdown
+gem 'redcarpet'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
