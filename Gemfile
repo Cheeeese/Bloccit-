@@ -58,18 +58,15 @@ gem 'pundit'
 # Redcarpet for Markdown
 gem 'redcarpet'
 
-# <<<<<<< HEAD
 # Implementing pagination
 gem 'will_paginate', '~> 3.0.5'
-# =======
-# Gemfiles to help with Uploading images - CarrierWave and MiniMagick
 
+# Gemfiles to help with Uploading images - CarrierWave and MiniMagick
 gem 'carrierwave'
 gem 'mini_magick'
 
 # Fog used to support Amazon S3 for storing uploaded files
 gem 'fog'
-# >>>>>>> uploading-images
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
