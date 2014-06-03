@@ -36,13 +36,13 @@ class AvatarUploader < CarrierWave::Uploader::Base
     process :resize_to_fill => [20, 20]
   end
 
-version :small do
-  process :resize_to_fill => [30, 30]
-end
+  version :small do
+    process :resize_to_fill => [30, 30]
+  end
 
-version :profile do
-  process :resize_to_fill => [45, 45]
-end
+  version :profile do
+    process :resize_to_fill => [45, 45]
+  end
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
@@ -55,5 +55,4 @@ end
   # def filename
   #   "something.jpg" if original_filename
   # end
-
 end
