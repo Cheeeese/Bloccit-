@@ -1,0 +1,14 @@
+ <h1>Edit Comment</h1>
+
+ <div class="row">
+   <div class="col-md-4">
+    <p>Guidelines for comments</p>
+    <ul>
+      <li>No offensive language</li>
+      <li>Relavent comments only</li>
+    </ul>
+  </div>
+  <div class="col-md-8">
+    <%= render partial: 'form', locals: {topic: @topic, post: @post, comment: @comment} %>
+  </div>
+</div>

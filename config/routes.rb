@@ -6,6 +6,10 @@ Bloccit::Application.routes.draw do
   resources :topics do
     resources :posts, except: [:index]
   end
+
+  resources :posts do
+    resources :comments, only: [:create]
+  end 
   
   get 'about' => 'welcome#about'
 
